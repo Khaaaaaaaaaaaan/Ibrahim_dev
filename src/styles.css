@@ -1,3 +1,13 @@
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Sora', 'Plus Jakarta Sans', sans-serif;
+}
 @keyframes fadeUp {
     from {
         opacity: 0;
