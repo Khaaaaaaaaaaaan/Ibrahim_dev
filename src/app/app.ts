@@ -318,14 +318,16 @@ import { Component } from '@angular/core';
     }
 
     .hero-content {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 60px;
-      align-items: center;
-      min-height: 85vh;
-      position: relative;
-      z-index: 2;
-    }
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  min-height: 85vh;
+  position: relative;
+  z-index: 2;
+
+  animation: fadeUp 1s ease forwards;
+}
 
     .badge {
       display: inline-flex;
@@ -338,23 +340,24 @@ import { Component } from '@angular/core';
       font-size: 14px;
     }
 
-    .hero-left h1 {
-      font-size: 68px;
-      line-height: 1.1;
-      margin-bottom: 24px;
-      font-weight: 800;
-    }
+   .hero-left h1 {
+  font-size: 68px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  font-weight: 800;
+
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero-left p {
+  animation: fadeUp 1.4s ease forwards;
+}
 
     .hero-left h1 span {
       color: #7c8cff;
     }
 
-    .hero-left p {
-      color: #cfd3ff;
-      line-height: 1.8;
-      font-size: 18px;
-      max-width: 650px;
-    }
+
 
     .hero-buttons {
       display: flex;
@@ -370,6 +373,9 @@ import { Component } from '@angular/core';
       cursor: pointer;
       transition: 0.3s ease;
       font-weight: 600;
+      position: relative;
+  overflow: hidden;
+
     }
 
     .primary-btn {
@@ -377,6 +383,8 @@ import { Component } from '@angular/core';
       background: linear-gradient(135deg, #6b7cff, #4f46e5);
       color: white;
       box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
+
+
     }
 
     .primary-btn:hover {
@@ -431,6 +439,8 @@ import { Component } from '@angular/core';
       justify-content: center;
       overflow: hidden;
       backdrop-filter: blur(14px);
+       animation: float 6s ease-in-out infinite;
+  transition: 0.4s ease;
     }
 
     .profile-circle {
