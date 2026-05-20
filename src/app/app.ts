@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
         <div class="overlay"></div>
 
         <nav class="navbar">
-          <div class="logo">FlutterDev.</div>
+          <div class="logo">Flutter Developer</div>
 
           <div class="nav-links">
             <a href="#about">About</a>
