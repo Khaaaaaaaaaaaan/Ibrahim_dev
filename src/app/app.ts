@@ -5,68 +5,108 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule],
+
   template: `
     <div class="portfolio">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">Ibrahim Wahid</div>
+
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="/Ibrahim-Wahid-Resume.pdf" download="Ibrahim-Wahid-Resume.pdf" class="resume-btn">
+          Download CV
+        </a>
+      </header>
 
       <!-- HERO -->
       <section class="hero">
+        <div class="left">
+          <span class="badge"> Available For Remote Work </span>
 
-        <div class="bg-glow"></div>
+          <h1>
+            Senior <span>Flutter Developer</span><br />
+            Building Modern Mobile Apps
+          </h1>
 
-        <nav class="nav">
-          <div class="logo">Flutter Developer</div>
+          <p>
+            I build scalable Flutter applications with clean architecture, Firebase integration,
+            modern UI/UX and production-ready systems.
+          </p>
 
-          <div class="links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </nav>
+          <div class="contact-info">
+            <a href="mailto:ibrahim@email.com"> 📧 ibrahimwahid333@gmail.com </a>
 
-        <div class="hero-content">
-
-          <div class="left">
-            <span class="badge">Available for Remote Work</span>
-
-            <h1>
-              Senior <span>Flutter Developer</span><br />
-              Building Modern Mobile Experiences
-            </h1>
-
-            <p>
-              5+ years of experience creating scalable Flutter applications,
-              prayer apps, business apps, backend integrations, Firebase,
-              REST APIs, and production-ready mobile solutions.
-            </p>
-
-            <div class="buttons">
-              <button class="primary">Hire Me</button>
-              <button class="secondary">View Projects</button>
-            </div>
-
-            <div class="stats">
-              <div class="card"><h2>5+</h2><p>Years Experience</p></div>
-              <div class="card"><h2>20+</h2><p>Apps Delivered</p></div>
-              <div class="card"><h2>10+</h2><p>International Clients</p></div>
-            </div>
+            <a href="https://wa.me/923001234567" target="_blank"> 📱 +92 333 4342004 </a>
           </div>
 
-          <div class="right">
-            <div class="profile">
-              <div class="circle"></div>
+          <div class="buttons">
+            <button class="primary">Hire Me</button>
 
-              <div class="tech">
-                <span>Flutter</span>
-                <span>Firebase</span>
-                <span>GetX</span>
-                <span>REST API</span>
-                <span>Node.js</span>
-                <span>ASP.NET</span>
-              </div>
-            </div>
+            <a
+              href="/Ibrahim-Wahid-Resume.pdf"
+              download="Ibrahim-Wahid-Resume.pdf"
+              class="secondary"
+            >
+              Download Resume
+            </a>
           </div>
 
+          <!-- SOCIAL LINKS -->
+          <div class="socials">
+            <a href="https://github.com/Khaaaaaaaaaaaan" target="_blank"> GitHub </a>
+
+            <a href="https://www.linkedin.com/in/ibrahim-wahid-3b5509243" target="_blank">
+              LinkedIn
+            </a>
+
+            <a href="https://www.facebook.com/ibrahim.wahid.988" target="_blank"> Facebook </a>
+
+            <a href="https://x.com/Ibrahimwahid18" target="_blank"> X (Twitter) </a>
+          </div>
+
+          <!-- STATS -->
+          <div class="stats">
+            <div class="card">
+              <h2>5+</h2>
+              <p>Years Experience</p>
+            </div>
+
+            <div class="card">
+              <h2>20+</h2>
+              <p>Apps Delivered</p>
+            </div>
+
+            <div class="card">
+              <h2>10+</h2>
+              <p>International Clients</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+          <div class="profile-card">
+            <img src="/profile.jpg" alt="Ibrahim Wahid" />
+
+            <h3>Ibrahim Wahid</h3>
+
+            <span>Senior Flutter Developer</span>
+
+            <div class="tech">
+              <span>Flutter</span>
+              <span>Firebase</span>
+              <span>REST API</span>
+              <span>GetX</span>
+              <span>ASP.NET</span>
+              <span>Node.js</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -75,48 +115,70 @@ import { Component } from '@angular/core';
         <h2 class="title">About Me</h2>
 
         <div class="grid-2">
-
           <div class="box">
             <h3>Who I Am</h3>
+
             <p>
-              I am a passionate Flutter developer focused on building
-              high-performance and clean mobile applications for Android,
-              iOS, and Web.
+              Passionate Flutter developer focused on high-performance applications with scalable
+              architecture and premium UI design.
             </p>
+
             <p>
-              I specialize in production-level Flutter architecture,
-              Firebase integration, payment systems, REST APIs,
-              authentication flows, offline storage, and responsive UI.
+              I specialize in Firebase, REST APIs, clean architecture, offline storage,
+              authentication systems and business solutions.
             </p>
           </div>
 
           <div class="box">
-            <h3>What I Offer</h3>
+            <h3>Services</h3>
+
             <ul>
-              <li>Cross-platform Flutter apps</li>
-              <li>Beautiful modern UI/UX</li>
-              <li>Firebase integration</li>
-              <li>API integration</li>
-              <li>Performance optimization</li>
-              <li>App Store & Play Store deployment</li>
-              <li>Bug fixing & maintenance</li>
+              <li>Flutter Mobile Apps</li>
+              <li>Firebase Integration</li>
+              <li>REST APIs</li>
+              <li>Admin Panels</li>
+              <li>Play Store Deployment</li>
+              <li>UI/UX Implementation</li>
+              <li>Bug Fixing & Optimization</li>
             </ul>
           </div>
-
         </div>
       </section>
 
       <!-- SKILLS -->
       <section id="skills" class="section">
-        <h2 class="title">My Skills</h2>
+        <h2 class="title">Skills</h2>
 
         <div class="grid-3">
-          <div class="box">Flutter <p>Advanced mobile development</p></div>
-          <div class="box">Firebase <p>Auth, Firestore, Analytics</p></div>
-          <div class="box">State Management <p>GetX, Provider, Bloc</p></div>
-          <div class="box">Backend APIs <p>REST, ASP.NET, Node.js</p></div>
-          <div class="box">Database <p>Hive, SQLite, Firestore</p></div>
-          <div class="box">Deployment <p>Play Store & App Store</p></div>
+          <div class="box">
+            <h3>Flutter</h3>
+            <p>Cross-platform mobile apps</p>
+          </div>
+
+          <div class="box">
+            <h3>Firebase</h3>
+            <p>Auth, Firestore, Analytics</p>
+          </div>
+
+          <div class="box">
+            <h3>State Management</h3>
+            <p>GetX, Bloc, Provider</p>
+          </div>
+
+          <div class="box">
+            <h3>Backend APIs</h3>
+            <p>REST APIs & Integrations</p>
+          </div>
+
+          <div class="box">
+            <h3>Databases</h3>
+            <p>Hive, SQLite, SQL</p>
+          </div>
+
+          <div class="box">
+            <h3>Deployment</h3>
+            <p>Play Store & App Store</p>
+          </div>
         </div>
       </section>
 
@@ -125,322 +187,418 @@ import { Component } from '@angular/core';
         <h2 class="title">Featured Projects</h2>
 
         <div class="grid-3">
-
           <div class="box project">
-            <h3>SalahPlus App</h3>
-            <p>Islamic prayer app with adhkar, qadha tracker, offline audio.</p>
+            <h3>SalahPlus</h3>
+
+            <p>Islamic prayer app with adhkar, qadha tracker and offline audio.</p>
+
             <div class="tags">
-              <span>Flutter</span><span>Firebase</span><span>GetX</span>
+              <span>Flutter</span>
+              <span>Firebase</span>
+              <span>GetX</span>
             </div>
           </div>
 
           <div class="box project">
             <h3>E-Commerce App</h3>
-            <p>Full shopping app with payments and admin panel.</p>
+
+            <p>Full shopping application with payments and admin panel.</p>
+
             <div class="tags">
-              <span>Flutter</span><span>REST API</span><span>Stripe</span>
+              <span>Flutter</span>
+              <span>REST API</span>
+              <span>Stripe</span>
             </div>
           </div>
 
           <div class="box project">
-            <h3>Business System</h3>
-            <p>Inventory, invoices, reports, and customer management.</p>
+            <h3>Business ERP</h3>
+
+            <p>Inventory, invoices, reports and customer management system.</p>
+
             <div class="tags">
-              <span>Flutter</span><span>ASP.NET</span><span>SQL</span>
+              <span>Flutter</span>
+              <span>ASP.NET</span>
+              <span>SQL</span>
             </div>
           </div>
-
         </div>
       </section>
 
       <!-- CONTACT -->
       <section id="contact" class="section">
-        <div class="contact">
+        <div class="contact-box">
+          <h2>Let's Build Something Amazing</h2>
 
-          <div>
-            <h4>Let's Work Together</h4>
-            <h2>Need a Flutter Developer?</h2>
-            <p>Available for freelance and remote work.</p>
-          </div>
+          <p>Available for freelance, remote jobs and Flutter projects.</p>
 
           <div class="buttons">
-            <button class="primary">Contact Me</button>
-            <button class="secondary">Download CV</button>
-          </div>
+            <a href="mailto:ibrahim@email.com" class="primary"> Email Me </a>
 
+            <a href="https://wa.me/923334342004" target="_blank" class="secondary"> WhatsApp </a>
+          </div>
         </div>
       </section>
-
     </div>
   `,
-  styles: [`
 
-  /* RESET */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Inter, sans-serif;
-  }
+  styles: [
+    `
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
 
-  html {
-    scroll-behavior: smooth;
-  }
+      html {
+        scroll-behavior: smooth;
+      }
 
-  body {
-    background: #050816;
-  }
+      body {
+        background: #f7f9fc;
+      }
 
-  .portfolio {
-    color: white;
-    background: linear-gradient(180deg, #050816, #0b1023);
-    overflow-x: hidden;
-  }
+      .portfolio {
+        background: #f7f9fc;
+        color: #0f172a;
+      }
 
-  /* HERO */
-  .hero {
-    min-height: 100vh;
-    padding: 40px 80px;
-    position: relative;
-  }
+      /* HEADER */
+      .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
 
-  .bg-glow {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, #4f46e5, transparent 70%);
-    filter: blur(120px);
-    top: -200px;
-    right: -200px;
-    opacity: 0.4;
-  }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+        padding: 20px 80px;
 
-  .logo {
-    font-size: 28px;
-    font-weight: 700;
-    color: #7c8cff;
-  }
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(14px);
 
-  .links {
-    display: flex;
-    gap: 25px;
-  }
+        border-bottom: 1px solid #e2e8f0;
+      }
 
-  .links a {
-    color: white;
-    text-decoration: none;
-  }
+      .logo {
+        font-size: 26px;
+        font-weight: 800;
+        color: #2563eb;
+      }
 
-  .hero-content {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 60px;
-    margin-top: 60px;
-  }
+      .nav-links {
+        display: flex;
+        gap: 30px;
+      }
 
-  .badge {
-    background: rgba(255,255,255,0.08);
-    padding: 8px 16px;
-    border-radius: 999px;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
+      .nav-links a {
+        text-decoration: none;
+        color: #334155;
+        font-weight: 600;
+        transition: 0.3s;
+      }
 
-  h1 {
-    font-size: 60px;
-    line-height: 1.1;
-  }
+      .nav-links a:hover {
+        color: #2563eb;
+      }
 
-  h1 span {
-    color: #7c8cff;
-  }
+      .resume-btn {
+        background: #2563eb;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+      }
 
-  p {
-    margin-top: 20px;
-    color: #cfd3ff;
-    line-height: 1.7;
-  }
+      /* HERO */
+      .hero {
+        min-height: 100vh;
 
-  /* BUTTONS */
-  .buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 60px;
 
-  .primary, .secondary {
-    padding: 14px 24px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: 600;
-  }
+        align-items: center;
 
-  .primary {
-    background: linear-gradient(135deg,#6b7cff,#4f46e5);
-    border: none;
-    color: white;
-  }
+        padding: 10px 80px;
+      }
 
-  .secondary {
-    background: transparent;
-    border: 1px solid #ffffff22;
-    color: white;
-  }
+      .badge {
+        background: #c2f0f0;
+        color: #1ed83a;
 
-  .primary:hover,
-  .secondary:hover {
-    transform: translateY(-4px);
-  }
+        padding: 10px 18px;
+        border-radius: 999px;
 
-  /* STATS */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 15px;
-    margin-top: 40px;
-  }
+        display: inline-block;
+        font-weight: 700;
+      }
 
-  .card {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 18px;
-  }
+      h1 {
+        font-size: 64px;
+        line-height: 1.1;
+        margin-top: 25px;
+      }
 
-  .card h2 {
-    color: #7c8cff;
-  }
+      h1 span {
+        color: #2563eb;
+      }
 
-  /* PROFILE */
-  .profile {
-    background: rgba(255,255,255,0.05);
-    border-radius: 30px;
-    padding: 40px;
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+      p {
+        margin-top: 20px;
+        color: #64748b;
+        line-height: 1.8;
+        font-size: 18px;
+      }
 
-  .circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(135deg,#6b7cff,#8b5cf6);
-  }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 25px;
+      }
 
-  .tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 30px;
-    justify-content: center;
-  }
+      .contact-info a {
+        color: #334155;
+        text-decoration: none;
+        font-weight: 600;
+      }
 
-  .tech span {
-    background: rgba(255,255,255,0.08);
-    padding: 8px 14px;
-    border-radius: 999px;
-  }
+      /* BUTTONS */
+      .buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
 
-  /* SECTIONS */
-  .section {
-    padding: 100px 80px;
-  }
+      .primary,
+      .secondary {
+        padding: 15px 26px;
+        border-radius: 14px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        transition: 0.3s;
+      }
 
-  .title {
-    text-align: center;
-    font-size: 42px;
-    margin-bottom: 50px;
-  }
+      .primary {
+        background: #2563eb;
+        color: white;
+      }
 
-  .grid-2 {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-  }
+      .secondary {
+        background: white;
+        color: #0f172a;
+        border: 1px solid #dbe2ea;
+      }
 
-  .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 25px;
-  }
+      .primary:hover,
+      .secondary:hover {
+        transform: translateY(-4px);
+      }
 
-  .box {
-    background: rgba(255,255,255,0.05);
-    padding: 30px;
-    border-radius: 20px;
-    transition: 0.3s;
-  }
+      /* SOCIALS */
+      .socials {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
 
-  .box:hover {
-    transform: translateY(-8px);
-    border: 1px solid #7c8cff55;
-  }
+      .socials a {
+        text-decoration: none;
+        color: #2563eb;
+        font-weight: 700;
+      }
 
-  .tags {
-    margin-top: 15px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
+      /* STATS */
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+      }
 
-  .tags span {
-    background: rgba(255,255,255,0.08);
-    padding: 6px 12px;
-    border-radius: 999px;
-    font-size: 12px;
-  }
+      .card {
+        background: white;
+        padding: 25px;
+        border-radius: 22px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      }
 
-  /* CONTACT */
-  .contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    border-radius: 30px;
-    background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(139,92,246,0.1));
-  }
+      .card h2 {
+        color: #2563eb;
+        font-size: 32px;
+      }
 
-  /* RESPONSIVE */
-  @media (max-width: 1100px) {
-    .hero-content {
-      grid-template-columns: 1fr;
-    }
+      /* PROFILE */
+      .profile-card {
+        background: white;
+        padding: 40px;
+        border-radius: 30px;
+        text-align: center;
 
-    .grid-2,
-    .grid-3,
-    .stats {
-      grid-template-columns: 1fr;
-    }
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+      }
 
-    h1 {
-      font-size: 42px;
-    }
+      .profile-card img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 30px;
+      }
 
-    .contact {
-      flex-direction: column;
-      gap: 20px;
-      text-align: center;
-    }
+      .profile-card h3 {
+        margin-top: 20px;
+        font-size: 28px;
+      }
 
-    .hero {
-      padding: 30px 20px;
-    }
+      .profile-card span {
+        color: #64748b;
+      }
 
-    .section {
-      padding: 60px 20px;
-    }
-  }
+      .tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 30px;
+      }
 
-  `]
+      .tech span {
+        background: #eff6ff;
+        color: #2563eb;
+
+        padding: 10px 16px;
+        border-radius: 999px;
+
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      /* SECTIONS */
+      .section {
+        padding: 20px 80px;
+      }
+
+      .title {
+        font-size: 48px;
+        margin-bottom: 50px;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+      }
+
+      .box {
+        background: white;
+        padding: 35px;
+        border-radius: 24px;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+        transition: 0.3s;
+      }
+
+      .box:hover {
+        transform: translateY(-8px);
+      }
+
+      .box h3 {
+        margin-bottom: 15px;
+      }
+
+      .box ul {
+        padding-left: 20px;
+        margin-top: 15px;
+      }
+
+      .box li {
+        margin-bottom: 10px;
+        color: #475569;
+      }
+
+      .tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .tags span {
+        background: #eff6ff;
+        color: #2563eb;
+
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      /* CONTACT */
+      .contact-box {
+        background: white;
+        padding: 60px;
+        border-radius: 30px;
+        text-align: center;
+
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      }
+
+      .contact-box h2 {
+        font-size: 42px;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 1100px) {
+        .hero,
+        .grid-2,
+        .grid-3,
+        .stats {
+          grid-template-columns: 1fr;
+        }
+
+        .header {
+          padding: 20px;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .hero {
+          padding: 50px 20px;
+        }
+
+        .section {
+          padding: 70px 20px;
+        }
+
+        h1 {
+          font-size: 42px;
+        }
+
+        .title {
+          font-size: 36px;
+        }
+
+        .profile-card img {
+          width: 180px;
+          height: 180px;
+        }
+      }
+    `,
+  ],
 })
 export class App {}
