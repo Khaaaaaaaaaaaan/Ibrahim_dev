@@ -40,9 +40,14 @@ import { Component } from '@angular/core';
           </p>
 
           <div class="contact-info">
-            <a href="mailto:ibrahim@email.com"> 📧 ibrahimwahid333@gmail.com </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=ibrahimwahid333@gmail.com"
+              target="_blank"
+            >
+              📧 ibrahimwahid333@gmail.com
+            </a>
 
-            <a href="https://wa.me/923001234567" target="_blank"> 📱 +92 333 4342004 </a>
+            <a href="https://wa.me/923334342004" target="_blank"> 📱 +92 333 4342004 </a>
           </div>
 
           <div class="buttons">
@@ -78,13 +83,15 @@ import { Component } from '@angular/core';
             </div>
 
             <div class="card">
-              <h2>20+</h2>
+              <h2>8+</h2>
               <p>Apps Delivered</p>
+              <span>(Self/Company)</span>
             </div>
 
             <div class="card">
-              <h2>10+</h2>
+              <h2>0</h2>
               <p>International Clients</p>
+              <span>Searching ....</span>
             </div>
           </div>
         </div>
@@ -184,42 +191,163 @@ import { Component } from '@angular/core';
 
       <!-- PROJECTS -->
       <section id="projects" class="section">
-        <h2 class="title">Featured Projects</h2>
+        <h2 class="title">Projects & Experience</h2>
 
         <div class="grid-3">
+          <!-- GAMA -->
           <div class="box project">
-            <h3>SalahPlus</h3>
+            <h3>GAMA</h3>
 
-            <p>Islamic prayer app with adhkar, qadha tracker and offline audio.</p>
+            <p class="role">
+              Shipping Line Project
+              <span class="meta-tag company">Company: Office Automation Services</span>
+            </p>
+
+            <div class="desc">
+              Flutter mobile app for shipping operations, tracking and workflow automation.
+            </div>
 
             <div class="tags">
               <span>Flutter</span>
-              <span>Firebase</span>
-              <span>GetX</span>
+              <span>Android</span>
+              <span>iOS</span>
             </div>
           </div>
 
+          <!-- CSUL -->
           <div class="box project">
-            <h3>E-Commerce App</h3>
+            <h3>CSUL</h3>
 
-            <p>Full shopping application with payments and admin panel.</p>
+            <p class="role">
+              Shipping Line Project
+              <span class="meta-tag company">Company: Office Automation Services</span>
+            </p>
+
+            <div class="desc">
+              Logistics and shipment management system with real-time tracking features.
+            </div>
 
             <div class="tags">
               <span>Flutter</span>
-              <span>REST API</span>
-              <span>Stripe</span>
+              <span>Android</span>
+              <span>iOS</span>
             </div>
           </div>
 
+          <!-- CTRACK -->
           <div class="box project">
-            <h3>Business ERP</h3>
+            <h3>CTRACK</h3>
 
-            <p>Inventory, invoices, reports and customer management system.</p>
+            <p class="role">
+              Tracking System
+              <span class="meta-tag company">Company: Office Automation Services</span>
+            </p>
+
+            <div class="desc">
+              Fleet and shipment tracking system with live updates and reporting.
+            </div>
 
             <div class="tags">
               <span>Flutter</span>
-              <span>ASP.NET</span>
-              <span>SQL</span>
+              <span>GPS Tracking</span>
+              <span>API Integration</span>
+            </div>
+          </div>
+
+          <!-- VISUAL MUSLIMS -->
+          <div class="box project">
+            <h3>Visual Muslims Goal & Habit</h3>
+
+            <p class="role">
+              Islamic Habit Tracking App
+              <span class="meta-tag company">Company: DoozieLabs</span>
+            </p>
+
+            <div class="desc">
+              Goal tracking and habit-building app for Islamic lifestyle improvement.
+            </div>
+
+            <div class="tags">
+              <span>Flutter</span>
+              <span>Android</span>
+              <span>iOS</span>
+            </div>
+          </div>
+
+          <!-- SALAHPRO -->
+          <div class="box project">
+            <h3>SalahPro</h3>
+
+            <p class="role">
+              Prayer Timing App
+              <span class="meta-tag company">Company: DoozieLabs</span>
+            </p>
+
+            <div class="desc">Prayer timing, adhkar, and namaz tracking with notifications.</div>
+
+            <div class="tags">
+              <span>Flutter</span>
+              <span>Android</span>
+              <span>iOS</span>
+              <span>Web</span>
+            </div>
+          </div>
+
+          <!-- BRMS WEB -->
+          <div class="box project">
+            <h3>BRMS (Web Admin Panel)</h3>
+
+            <p class="role">
+              ERP System
+              <span class="meta-tag self">Self Developed</span>
+            </p>
+
+            <div class="desc">
+              Business ERP system for inventory, invoices and reporting dashboard.
+            </div>
+
+            <div class="tags">
+              <span>Angular</span>
+              <span>ERP</span>
+              <span>Web</span>
+            </div>
+          </div>
+
+          <!-- BRMS MOBILE -->
+          <div class="box project">
+            <h3>BRMS Mobile App</h3>
+
+            <p class="role">
+              ERP Mobile App
+              <span class="meta-tag self">Self Developed</span>
+            </p>
+
+            <div class="desc">Native Android ERP mobile application for field operations.</div>
+
+            <div class="tags">
+              <span>Java</span>
+              <span>Android</span>
+              <span>ERP</span>
+            </div>
+          </div>
+
+          <!-- ECOMMERCE -->
+          <div class="box project">
+            <h3>E-Commerce Web App</h3>
+
+            <p class="role">
+              Online Store System
+              <span class="meta-tag self">Self Developed</span>
+            </p>
+
+            <div class="desc">
+              Full-featured eCommerce platform with admin panel and product management.
+            </div>
+
+            <div class="tags">
+              <span>Angular</span>
+              <span>Web</span>
+              <span>Admin Panel</span>
             </div>
           </div>
         </div>
@@ -233,7 +361,13 @@ import { Component } from '@angular/core';
           <p>Available for freelance, remote jobs and Flutter projects.</p>
 
           <div class="buttons">
-            <a href="mailto:ibrahim@email.com" class="primary"> Email Me </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=ibrahimwahid333@gmail.com"
+              target="_blank"
+              class="primary"
+            >
+              Email Me
+            </a>
 
             <a href="https://wa.me/923334342004" target="_blank" class="secondary"> WhatsApp </a>
           </div>
@@ -597,6 +731,39 @@ import { Component } from '@angular/core';
           width: 180px;
           height: 180px;
         }
+      }
+      .role {
+        margin-top: 10px;
+        font-weight: 600;
+        color: #334155;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .meta-tag {
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+
+      .meta-tag.company {
+        background: #e0f2fe;
+        color: #0284c7;
+      }
+
+      .meta-tag.self {
+        background: #fef3c7;
+        color: #b45309;
+      }
+
+      .desc {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #64748b;
+        line-height: 1.6;
       }
     `,
   ],
