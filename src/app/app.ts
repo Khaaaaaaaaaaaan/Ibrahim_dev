@@ -64,7 +64,7 @@ import { Component } from '@angular/core';
 
           <!-- SOCIAL LINKS -->
           <div class="socials">
-            <a href="https://github.com/Khaaaaaaaaaaaan" target="_blank"> GitHub </a>
+            <!-- <a href="https://github.com/Khaaaaaaaaaaaan" target="_blank"> GitHub </a> -->
 
             <a href="https://www.linkedin.com/in/ibrahim-wahid-3b5509243" target="_blank">
               LinkedIn
