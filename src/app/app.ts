@@ -19,9 +19,7 @@ import { Component } from '@angular/core';
           <a href="#contact">Contact</a>
         </nav>
 
-        <a href="/Ibrahim-Wahid-Resume.pdf" download="Ibrahim-Wahid-Resume.pdf" class="resume-btn">
-          Download CV
-        </a>
+        <a href="/resume.pdf" download="resume.pdf" class="resume-btn"> Download CV </a>
       </header>
 
       <!-- HERO -->
@@ -53,13 +51,7 @@ import { Component } from '@angular/core';
           <div class="buttons">
             <button class="primary">Hire Me</button>
 
-            <a
-              href="/Ibrahim-Wahid-Resume.pdf"
-              download="Ibrahim-Wahid-Resume.pdf"
-              class="secondary"
-            >
-              Download Resume
-            </a>
+            <a href="/resume.pdf" download="resume.pdf" class="secondary"> Download Resume </a>
           </div>
 
           <!-- SOCIAL LINKS -->
