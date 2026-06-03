@@ -594,7 +594,12 @@ import AOS from 'aos';
               <option value="Discussion">Need Discussion</option>
               <option value="Hire">Want to Hire You</option>
             </select>
-
+            <textarea
+              class=""
+              placeholder="Describe your project or requirement..."
+              rows="5"
+              [(ngModel)]="contact.description"
+            ></textarea>
             <button class="primary" (click)="sendEmail()">Send Message</button>
           </div>
         </div>
@@ -1193,6 +1198,7 @@ import AOS from 'aos';
       }
 
       .contact-form input,
+      .contact-form textarea,
       .contact-form select {
         padding: 14px 16px;
         border-radius: 12px;
@@ -1340,10 +1346,15 @@ export class App {
   contact = {
     name: '',
     email: '',
+    description: '',
     type: 'Consultation',
   };
   sendEmail() {
-    if (this.contact.name.trim() === '' || this.contact.email.trim() === '') {
+    if (
+      this.contact.name.trim() === '' ||
+      this.contact.email.trim() === '' ||
+      this.contact.description.trim() === ''
+    ) {
       alert('Please fill in all fields before sending the message.');
       return;
     }
@@ -1353,6 +1364,7 @@ export class App {
 Name: ${this.contact.name}
 Email: ${this.contact.email}
 Request Type: ${this.contact.type}
+Description: ${this.contact.description}
 `;
 
     const mailtoLink =
