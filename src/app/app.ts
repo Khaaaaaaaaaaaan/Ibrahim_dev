@@ -17,11 +17,19 @@ import AOS from 'aos';
         <nav class="nav-links">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
-
-        <a href="/resume.pdf" download="resume.pdf" class="resume-btn"> Download CV </a>
+        <a href="/resume.pdf" target="_blank" rel="noopener" class="resume-btn"> Resume </a>
+        <!-- <a
+          href="https://drive.google.com/file/d/11b5L7OdBOZzB7I9Fc_blACvEK7eVmJFi/view?usp=drivesdk"
+          target="_blank"
+          rel="noopener"
+          class="resume-btn"
+        >
+          Resume
+        </a> -->
       </header>
 
       <!-- HERO -->
@@ -51,9 +59,7 @@ import AOS from 'aos';
           </div>
 
           <div class="buttons">
-            <button class="primary">Hire Me</button>
-
-            <a href="/resume.pdf" download="resume.pdf" class="secondary"> Download Resume </a>
+            <a href="#contact" class="primary">Hire Me</a>
           </div>
 
           <!-- SOCIAL LINKS -->
@@ -82,11 +88,11 @@ import AOS from 'aos';
               <span>(Self/Company)</span>
             </div>
 
-            <div class="card">
+            <!-- <div class="card">
               <h2>0</h2>
               <p>International Clients</p>
               <span>Searching ....</span>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -182,23 +188,62 @@ import AOS from 'aos';
       </section>
 
       <!-- PROJECTS -->
-      <section id="projects" class="section">
-        <h2 class="title">Projects & Experience</h2>
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="section">
+        <h2 class="title">Experience</h2>
 
         <div class="grid-3">
           <!-- GAMA -->
-          <div class="box project">
-            <h3>GAMA</h3>
+          <div class="box-project">
+            <h3 class="project-title">
+              <img src="/gama_suite_logo.jpeg" alt="Gamasuite Mobile Logo" />
+              <span>Gamasuite Mobile</span>
+            </h3>
 
             <p class="role">
               Shipping Line Project
               <span class="meta-tag company">Company: Office Automation Services</span>
             </p>
 
-            <div class="desc">
-              Flutter mobile app for shipping operations, tracking and workflow automation.
+            <div
+              class="desc"
+              (mouseenter)="
+                showTooltip(
+                  $event,
+                  'Gama is a complete solution for small and medium-size forwarders that enables your customers to manage all their freight online. With pre-built integrations into leading TMS software (like CargoWise) and other logtech applications, gama is easy to implement and is connected with other major industry platforms and carriers.'
+                )
+              "
+              (mousemove)="moveTooltip($event)"
+              (mouseleave)="hideTooltip()"
+            >
+              Gama is a complete solution for small and medium-size forwarders that enables your
+              customers to manage all their freight online. With pre-built integrations into leading
+              TMS software (like CargoWise) and other logtech applications, gama is easy to
+              implement and is connected with other major industry platforms and carriers.
             </div>
+            <div class="links">
+              <div *ngIf="true">
+                <span class="label">Android:</span>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.oaspakistan.gama&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://play.google.com/store/apps/details?id=com.oaspakistan.gama&hl=en
+                </a>
+              </div>
 
+              <div *ngIf="true">
+                <span class="label"> iOS:</span>
+                <a
+                  href="https://apps.apple.com/us/app/gamasuite-mobile/id1627884065"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://apps.apple.com/us/app/gamasuite-mobile/id1627884065
+                </a>
+              </div>
+            </div>
             <div class="tags">
               <span>Flutter</span>
               <span>Android</span>
@@ -207,58 +252,178 @@ import AOS from 'aos';
           </div>
 
           <!-- CSUL -->
-          <div class="box project">
-            <h3>CSUL</h3>
+          <div class="box-project">
+            <h3 class="project-title">
+              <img src="/climax_csul.jpeg" alt="Climax Ultimate Logo" />
+              <span>Climax Ultimate</span>
+            </h3>
 
             <p class="role">
               Shipping Line Project
               <span class="meta-tag company">Company: Office Automation Services</span>
             </p>
 
-            <div class="desc">
-              Logistics and shipment management system with real-time tracking features.
+            <div
+              class="desc"
+              (mouseenter)="
+                showTooltip(
+                  $event,
+                  'Climax Shipping Ultimate Software is a powerful, all-in-one shipping management solution designed to streamline logistics operations. It offers advanced tools for tracking shipments, managing inventory, optimizing routes, and automating shipping processes to improve efficiency and reduce costs. With user-friendly interfaces and real-time analytics, Climax ensures seamless integration for businesses of all sizes, enhancing productivity and customer satisfaction.'
+                )
+              "
+              (mousemove)="moveTooltip($event)"
+              (mouseleave)="hideTooltip()"
+            >
+              Climax Shipping Ultimate Software is a powerful, all-in-one shipping management
+              solution designed to streamline logistics operations. It offers advanced tools for
+              tracking shipments, managing inventory, optimizing routes, and automating shipping
+              processes to improve efficiency and reduce costs. With user-friendly interfaces and
+              real-time analytics, Climax ensures seamless integration for businesses of all sizes,
+              enhancing productivity and customer satisfaction.
+            </div>
+            <div class="links">
+              <div *ngIf="true">
+                <span class="label">Android:</span>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.oas.csul&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://play.google.com/store/apps/details?id=com.oas.csul&hl=en
+                </a>
+              </div>
+
+              <!-- <div *ngIf="true">
+                <span class="label"> iOS:</span>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  
+                </a>
+              </div> -->
             </div>
 
             <div class="tags">
               <span>Flutter</span>
               <span>Android</span>
-              <span>iOS</span>
+              <!-- <span>iOS</span> -->
             </div>
           </div>
 
           <!-- CTRACK -->
-          <div class="box project">
-            <h3>CTRACK</h3>
+          <div class="box-project ">
+            <h3 class="project-title">
+              <img src="/climax_ctrack.jpeg" alt="Climax NVOCC Logo" />
+              <span>Climax NVOCC</span>
+            </h3>
 
             <p class="role">
               Tracking System
               <span class="meta-tag company">Company: Office Automation Services</span>
             </p>
 
-            <div class="desc">
-              Fleet and shipment tracking system with live updates and reporting.
+            <div
+              class="desc"
+              (mouseenter)="
+                showTooltip(
+                  $event,
+                  'Climax NVOCC App: Your Global Logistics Solution Experience seamless logistics management with the Climax NVOCC Mobile App. Access all essential features with just one tap, no matter where you are in the world. Designed to enhance productivity and streamline operations, our app offers comprehensive solutions for managing bookings, inventory, Trading and communication.'
+                )
+              "
+              (mousemove)="moveTooltip($event)"
+              (mouseleave)="hideTooltip()"
+            >
+              Climax NVOCC App: Your Global Logistics Solution Experience seamless logistics
+              management with the Climax NVOCC Mobile App. Access all essential features with just
+              one tap, no matter where you are in the world. Designed to enhance productivity and
+              streamline operations, our app offers comprehensive solutions for managing bookings,
+              inventory, Trading and communication.
             </div>
+            <div class="links">
+              <div *ngIf="true">
+                <span class="label">Android:</span>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.oaspakistan.nvocc&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://play.google.com/store/apps/details?id=com.oaspakistan.nvocc&hl=en
+                </a>
+              </div>
 
+              <!-- <div *ngIf="true">
+                <span class="label"> iOS:</span>
+                <a
+                  href="https://apps.apple.com/us/app/gamasuite-mobile/id1627884065"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://apps.apple.com/us/app/gamasuite-mobile/id1627884065
+                </a>
+              </div> -->
+            </div>
             <div class="tags">
               <span>Flutter</span>
+              <span>Android</span>
               <span>GPS Tracking</span>
               <span>API Integration</span>
             </div>
           </div>
 
           <!-- VISUAL MUSLIMS -->
-          <div class="box project">
-            <h3>Visual Muslims Goal & Habit</h3>
+          <div class="box-project">
+            <h3 class="project-title">
+              <img src="/vm_logo.png" alt="Visual Muslims Goal & Habit Logo" />
+              <span>Visual Muslims Goal & Habit</span>
+            </h3>
 
             <p class="role">
               Islamic Habit Tracking App
               <span class="meta-tag company">Company: DoozieLabs</span>
             </p>
 
-            <div class="desc">
-              Goal tracking and habit-building app for Islamic lifestyle improvement.
+            <div
+              class="desc"
+              (mouseenter)="
+                showTooltip(
+                  $event,
+                  'Visual Muslim (VM) is a free Islamic app designed to help Muslims turn faith into consistent action through purpose-driven habits, personal goal setting, and smart daily reminders that keep you connected to your deen (faith) every day. It combines Islamic habits, goals, visual reminders, and progress tracking to support spiritual growth and intentional living.'
+                )
+              "
+              (mousemove)="moveTooltip($event)"
+              (mouseleave)="hideTooltip()"
+            >
+              Visual Muslim (VM) is a free Islamic app designed to help Muslims turn faith into
+              consistent action through purpose-driven habits, personal goal setting, and smart
+              daily reminders that keep you connected to your deen (faith) every day. It combines
+              Islamic habits, goals, visual reminders, and progress tracking to support spiritual
+              growth and intentional living.
             </div>
+            <div class="links">
+              <div *ngIf="true">
+                <span class="label">Android:</span>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.visualmuslim.app&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://play.google.com/store/apps/details?id=com.visualmuslim.app&hl=en
+                </a>
+              </div>
 
+              <div *ngIf="true">
+                <span class="label"> iOS:</span>
+                <a
+                  href="https://apps.apple.com/us/app/visual-muslim-goals-habits/id6740770609"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://apps.apple.com/us/app/visual-muslim-goals-habits/id6740770609
+                </a>
+              </div>
+            </div>
             <div class="tags">
               <span>Flutter</span>
               <span>Android</span>
@@ -267,26 +432,73 @@ import AOS from 'aos';
           </div>
 
           <!-- SALAHPRO -->
-          <div class="box project">
-            <h3>SalahPro</h3>
+          <div class="box-project ">
+            <h3 class="project-title">
+              <img src="/salah_pro.png" alt="SalahPro Logo" />
+              <span>SalahPro</span>
+            </h3>
 
             <p class="role">
               Prayer Timing App
               <span class="meta-tag company">Company: DoozieLabs</span>
             </p>
 
-            <div class="desc">Prayer timing, adhkar, and namaz tracking with notifications.</div>
+            <div
+              class="desc"
+              (mouseenter)="
+                showTooltip(
+                  $event,
+                  'SalahPro is designed to help Muslims enhance their knowledge and practice of Islam. Easily find the Qibla direction no matter where you are and stay informed about the upcoming prayer times, including the time frames to perform each Salah.'
+                )
+              "
+              (mousemove)="moveTooltip($event)"
+              (mouseleave)="hideTooltip()"
+            >
+              SalahPro is designed to help Muslims enhance their knowledge and practice of Islam.
+              Easily find the Qibla direction no matter where you are and stay informed about the
+              upcoming prayer times, including the time frames to perform each Salah.
+            </div>
+            <div class="links">
+              <div *ngIf="true">
+                <span class="label">Android:</span>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.salahplus.app&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://play.google.com/store/apps/details?id=com.salahplus.app&hl=en
+                </a>
+              </div>
 
+              <div *ngIf="true">
+                <span class="label"> iOS:</span>
+                <a
+                  href="https://apps.apple.com/us/app/salah-pro/id6744323227"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://apps.apple.com/us/app/salah-pro/id6744323227
+                </a>
+              </div>
+            </div>
             <div class="tags">
               <span>Flutter</span>
+              <span>Firebase</span>
               <span>Android</span>
               <span>iOS</span>
               <span>Web</span>
             </div>
           </div>
+        </div>
+      </section>
 
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="section">
+        <h2 class="title">Projects</h2>
+
+        <div class="grid-3">
           <!-- BRMS WEB -->
-          <div class="box project">
+          <div class="box-project">
             <h3>BRMS (Web Admin Panel)</h3>
 
             <p class="role">
@@ -306,7 +518,7 @@ import AOS from 'aos';
           </div>
 
           <!-- BRMS MOBILE -->
-          <div class="box project">
+          <div class="box-project">
             <h3>BRMS Mobile App</h3>
 
             <p class="role">
@@ -324,7 +536,7 @@ import AOS from 'aos';
           </div>
 
           <!-- ECOMMERCE -->
-          <div class="box project">
+          <div class="box-project">
             <h3>E-Commerce Web App</h3>
 
             <p class="role">
@@ -387,6 +599,14 @@ import AOS from 'aos';
           </div>
         </div>
       </section>
+      <div
+        class="global-tooltip"
+        *ngIf="hoverTooltip.visible"
+        [style.left.px]="hoverTooltip.x"
+        [style.top.px]="hoverTooltip.y"
+      >
+        {{ hoverTooltip.text }}
+      </div>
     </div>
   `,
 
@@ -429,7 +649,7 @@ import AOS from 'aos';
 
         padding: 18px 80px;
 
-        background: rgba(255, 255, 255, 0.75);
+        background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(16px);
 
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -445,6 +665,15 @@ import AOS from 'aos';
       .nav-links {
         display: flex;
         gap: 30px;
+        padding: 12px 24px;
+        border-radius: 999px;
+
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+
+        border: 1px solid rgba(255, 255, 255, 0.5);
+
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
       }
 
       .nav-links a {
@@ -465,7 +694,26 @@ import AOS from 'aos';
         bottom: -6px;
         transition: 0.3s;
       }
+      .links {
+        display: flex;
+        gap: 12px;
+        margin-top: 12px;
+        flex-wrap: wrap;
+      }
 
+      .links a {
+        font-size: 10px;
+        font-weight: 700;
+        color: #2563eb;
+        text-decoration: none;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      .links a:hover {
+        transform: translateY(-2px);
+      }
       .nav-links a:hover::after {
         width: 100%;
       }
@@ -515,7 +763,38 @@ import AOS from 'aos';
       }
 
       .box-project {
+        display: flex;
+        flex-direction: column;
+        min-height: 320px;
+
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 28px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+        transition: all 0.35s ease;
+      }
+      .tooltip-container {
         position: relative;
+      }
+
+      .tooltip {
+        position: fixed;
+        max-width: 350px;
+        background: rgba(20, 20, 20, 0.95);
+        color: #fff;
+        padding: 12px 14px;
+        border-radius: 12px;
+        font-size: 12px;
+        line-height: 1.5;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+
+        opacity: 0;
+        transform: translateY(10px);
+        transition: 0.15s ease;
+        pointer-events: none;
       }
 
       /* HERO */
@@ -806,11 +1085,12 @@ import AOS from 'aos';
       .grid-3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 28px;
+        gap: 20px;
+        align-items: stretch;
       }
 
       .box {
-        padding: 35px;
+        padding: 20px;
       }
 
       .box h3 {
@@ -861,6 +1141,10 @@ import AOS from 'aos';
         font-size: 15px;
         color: #64748b;
         line-height: 1.8;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* ✅ 3 lines only */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
 
       /* CONTACT */
@@ -984,12 +1268,65 @@ import AOS from 'aos';
           font-size: 34px;
         }
       }
+      .project-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .project-title img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        border-radius: 8px;
+        flex-shrink: 0;
+      }
+
+      .project-title span {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      .global-tooltip {
+        position: absolute;
+        max-width: 380px;
+        background: rgba(15, 23, 42, 0.95);
+        color: #fff;
+        padding: 12px 14px;
+        border-radius: 12px;
+        font-size: 12px;
+        line-height: 1.6;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        z-index: 99999;
+        pointer-events: none;
+        white-space: normal;
+      }
     `,
   ],
 })
 export class App {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  hoverTooltip = {
+    visible: false,
+    text: '',
+    x: 0,
+    y: 0,
+  };
 
+  showTooltip(event: MouseEvent, text: string) {
+    this.hoverTooltip.visible = true;
+    this.hoverTooltip.text = text;
+    this.moveTooltip(event);
+  }
+
+  moveTooltip(event: MouseEvent) {
+    this.hoverTooltip.x = event.pageX + 15;
+    this.hoverTooltip.y = event.pageY + 15;
+  }
+
+  hideTooltip() {
+    this.hoverTooltip.visible = false;
+  }
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init({
