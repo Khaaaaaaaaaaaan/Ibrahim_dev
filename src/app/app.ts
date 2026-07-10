@@ -189,11 +189,10 @@ import AOS from 'aos';
 
       <!-- PROJECTS -->
       <!-- EXPERIENCE SECTION -->
-      <section id="experience" class="section">
+      <!-- <section id="experience" class="section">
         <h2 class="title">Experience</h2>
 
         <div class="grid-3">
-          <!-- GAMA -->
           <div class="box-project">
             <h3 class="project-title">
               <img src="/gama_suite_logo.jpeg" alt="Gamasuite Mobile Logo" />
@@ -251,7 +250,6 @@ import AOS from 'aos';
             </div>
           </div>
 
-          <!-- CSUL -->
           <div class="box-project">
             <h3 class="project-title">
               <img src="/climax_csul.jpeg" alt="Climax Ultimate Logo" />
@@ -293,26 +291,14 @@ import AOS from 'aos';
                 </a>
               </div>
 
-              <!-- <div *ngIf="true">
-                <span class="label"> iOS:</span>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  
-                </a>
-              </div> -->
             </div>
 
             <div class="tags">
               <span>Flutter</span>
               <span>Android</span>
-              <!-- <span>iOS</span> -->
             </div>
           </div>
 
-          <!-- CTRACK -->
           <div class="box-project ">
             <h3 class="project-title">
               <img src="/climax_ctrack.jpeg" alt="Climax NVOCC Logo" />
@@ -353,16 +339,7 @@ import AOS from 'aos';
                 </a>
               </div>
 
-              <!-- <div *ngIf="true">
-                <span class="label"> iOS:</span>
-                <a
-                  href="https://apps.apple.com/us/app/gamasuite-mobile/id1627884065"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://apps.apple.com/us/app/gamasuite-mobile/id1627884065
-                </a>
-              </div> -->
+
             </div>
             <div class="tags">
               <span>Flutter</span>
@@ -372,7 +349,6 @@ import AOS from 'aos';
             </div>
           </div>
 
-          <!-- VISUAL MUSLIMS -->
           <div class="box-project">
             <h3 class="project-title">
               <img src="/vm_logo.png" alt="Visual Muslims Goal & Habit Logo" />
@@ -431,7 +407,6 @@ import AOS from 'aos';
             </div>
           </div>
 
-          <!-- SALAHPRO -->
           <div class="box-project ">
             <h3 class="project-title">
               <img src="/salah_pro.png" alt="SalahPro Logo" />
@@ -490,7 +465,7 @@ import AOS from 'aos';
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- PROJECTS SECTION -->
       <section id="projects" class="section">
