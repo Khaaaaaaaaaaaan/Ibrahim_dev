@@ -186,6 +186,75 @@ import AOS from 'aos';
           </div>
         </div>
       </section>
+      <section id="experience" class="section">
+        <h2 class="title">Experience</h2>
+
+        <div class="experience-grid">
+          <!-- Experience 1 -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3>Flutter Developer</h3>
+                <p class="company">Office Automation Services • Karachi</p>
+              </div>
+              <div class="date">Jan 2022 — Oct 2024</div>
+            </div>
+
+            <ul class="exp-list">
+              <li>
+                Developed and deployed multiple production Flutter applications for shipping and
+                logistics domain
+              </li>
+              <li>
+                Built Mobile Applications for shipping, logistics and NVOCC operations — all
+                available on Play Store & App Store
+              </li>
+              <li>Integrated REST APIs, and real-time GPS tracking</li>
+              <li>
+                Worked on clean architecture, state management (GetX), and performance optimization
+              </li>
+              <li>Collaborated with backend teams to deliver scalable business solutions</li>
+            </ul>
+
+            <div class="tags">
+              <span>Flutter</span>
+              <span>REST API</span>
+              <span>GetX</span>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3>Senior Flutter Developer</h3>
+                <p class="company">DoozieLabs • Karachi</p>
+              </div>
+              <div class="date">Nov 2024 — Present</div>
+            </div>
+
+            <ul class="exp-list">
+              <li>Developing Islamic productivity applications</li>
+              <li>Implemented goal & habit tracking with beautiful UI/UX and local + cloud sync</li>
+              <li>Built prayer timing app with Qibla direction and accurate calculations</li>
+              <li>
+                Working on full-cycle development: architecture, UI/UX, Firebase backend, and App
+                Store deployment
+              </li>
+              <li>Focused on performance, clean code, and delightful user experience</li>
+            </ul>
+
+            <div class="tags">
+              <span>Flutter</span>
+              <span>Firebase</span>
+              <span>Inapp Purchase</span>
+              <span>Push Notifications</span>
+              <span>GetX</span>
+              <span>UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- PROJECTS -->
       <!-- EXPERIENCE SECTION -->
@@ -1281,6 +1350,75 @@ import AOS from 'aos';
         z-index: 99999;
         pointer-events: none;
         white-space: normal;
+      }
+      .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); /* Side by side */
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      /* Optional: Make it responsive */
+      @media (max-width: 768px) {
+        .experience-grid {
+          grid-template-columns: 1fr; /* Stack on mobile */
+        }
+      }
+
+      .experience-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 1.8rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+      }
+
+      .experience-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1.2rem;
+      }
+
+      .exp-header h3 {
+        font-size: 26px;
+        margin: 0;
+        color: #0f172a;
+      }
+
+      .company {
+        color: #2563eb;
+        font-weight: 600;
+        margin: 4px 0 0 0;
+      }
+
+      .date {
+        background: #f1f5f9;
+        color: #475569;
+        padding: 8px 16px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .exp-list {
+        padding-left: 20px;
+        margin-bottom: 28px;
+        line-height: 1.8;
+      }
+
+      .exp-list li {
+        margin-bottom: 10px;
+        color: #475569;
+      }
+
+      .exp-list li:last-child {
+        margin-bottom: 0;
       }
     `,
   ],
